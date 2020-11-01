@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>NBAallstar</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</header>
+
+<body>
+    <header>
+        <h2 class="year">2020 All-star</h2>
+        <span class="ver">|</span>
+        <ul class="headerline">
+            <% if user_signed_in? %>
+            <li class="list">Home</li>
+            <li class="list">Player</li>
+            <li class="list">Vote</li>
+            <li class="list">Log in</li>
+            <% else %>
+            <li class="list">Home</li>
+            <li class="list">Chicago Week</li>
+            <li class="list">Sign up</li>
+            <li class="list">Sign in</li>
+            <% end %>
+        </ul>
+    </header>
+    <%= image_tag 'nba2020.jpg' %>
+    <%= yield %>
+</body>
+
+</html>
