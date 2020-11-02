@@ -12,8 +12,8 @@
 
 <body>
     <header>
-        <h2 class="year">2020 All-star</h2>
-        <span class="ver">|</span>
+        <div class="year">2020 All-star</div>
+        <div class="ver">|</div>
         <ul class="headerline">
             <% if user_signed_in? %>
             <li class="list">Home</li>
@@ -21,10 +21,10 @@
             <li class="list">Vote</li>
             <li class="list">Log in</li>
             <% else %>
-            <li class="list">Home</li>
-            <li class="list">Chicago Week</li>
-            <li class="list">Sign up</li>
-            <li class="list">Sign in</li>
+            <li class="list"><%= link_to "Home", root_path, class:"li" %></li>
+            <li class="list"><%= link_to "Chicago Week",class:"li" %></li>
+            <li class="list"><%= link_to "Sign up", class:"li" %></li>
+            <li class="list"><%= link_to "Sign in", class:"li"%></li>
             <% end %>
         </ul>
     </header>
