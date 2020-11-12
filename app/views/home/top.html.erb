@@ -1,7 +1,8 @@
+<%= image_tag 'nb.jpg', class:"symbol" %>
 <% @players.each do |player| %>
 <table class="table table-striped">
     <td><%= player.name %></td>
-    <td><%= attachment_image_tag player, :image, size:"50x50" %></td>
+    <td><%= link_to player_path(player) do %><%= attachment_image_tag player, :image, size:"50x50" %><% end %></td>
     <td><%= player.height %></td>
     <td><%= player.weight %></td>
-    <% end %>f
+    <% end %>

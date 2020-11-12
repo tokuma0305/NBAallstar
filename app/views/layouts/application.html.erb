@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<header>
+<head>
     <title>NBAallstar</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</header>
+</head>
 
 <body>
     <header>
@@ -28,7 +28,6 @@
             <% end %>
         </ul>
     </header>
-    <%= image_tag 'nbaa.jpg', class:"symbol" %>
     <%= yield %>
 </body>
 

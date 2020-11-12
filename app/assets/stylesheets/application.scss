@@ -26,6 +26,8 @@ header{
 }
 .symbol{
     width: 100%;
+    position: relative;
+    top: 70px;
 }
 .year{
     padding-left: 5%;
@@ -64,4 +66,7 @@ li {
 li:hover {
     background-position: 0 100%;
     color: #fff;
+}
+.table{
+    margin-top: 70px;
 }
