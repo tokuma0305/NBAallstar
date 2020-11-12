@@ -2,3 +2,8 @@
     <div class="row">
         <div class="col-lg-4">
             <%= attachment_image_tag @player, :image, size:"300x300", class:"imagine" %>
+        </div>
+        <div class="col-lg-8">
+            <%= @player.height %>
+            <%= @player.weight %>
+        </div>

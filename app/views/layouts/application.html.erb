@@ -22,9 +22,9 @@
             <li class="list">Log in</li>
             <% else %>
             <li class="list"><%= link_to "Home", root_path, class:"li" %></li>
-            <li class="list"><%= link_to "Chicago Week",class:"li" %></li>
-            <li class="list"><%= link_to "Sign up", class:"li" %></li>
-            <li class="list"><%= link_to "Sign in", class:"li"%></li>
+            <li class="list"><%= link_to "Chicago Week", home_about_path, class:"li" %></li>
+            <li class="list"><%= link_to "Sign up", new_user_registration_path,class:"li" %></li>
+            <li class="list"><%= link_to "Sign in", new_user_session_path, class:"li"%></li>
             <% end %>
         </ul>
     </header>
