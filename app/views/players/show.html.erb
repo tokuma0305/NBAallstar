@@ -6,7 +6,7 @@
         <div class="col-lg-8">
             <%= @player.height %>
             <%= @player.weight %>
-            <%= form_with model:@vote, url: do |f| %>
+            <%= form_with model:@vote, url: votes_path do |f| %>
             <%= f.submit "vote" %>
             <% end %>
         </div>
