@@ -1,5 +1,7 @@
 class VotesController < ApplicationController
     def create
+        @vote = Vote.new(vote_params)
+        @vote.user_id = current_user.id
         
     end
     private
